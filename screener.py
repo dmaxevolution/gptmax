@@ -70,7 +70,9 @@ TICKERS = [
     {"ticker": "MAIN", "category": "IDX Liquid"}, {"ticker": "JPFA", "category": "IDX Liquid"},
     {"ticker": "TAPG", "category": "IDX Liquid"}, {"ticker": "DSNG", "category": "IDX Liquid"},
     {"ticker": "SSMS", "category": "IDX Liquid"}, {"ticker": "LSIP", "category": "IDX Liquid"},
-    {"ticker": "AALI", "category": "IDX Liquid"}, {"ticker": "ASSA", "category": "IDX Liquid"}
+    {"ticker": "AALI", "category": "IDX Liquid"}, {"ticker": "ASSA", "category": "IDX Liquid"},
+    {"ticker": "CDIA", "category": "IDX Liquid"}, {"ticker": "JGLE", "category": "IDX Liquid"},
+    {"ticker": "KOTA", "category": "IDX Liquid"}, {"ticker": "SIDO", "category": "IDX Liquid"}
 ]
 
 def calculate_rsi(series, period=14):
