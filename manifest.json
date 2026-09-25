@@ -1,0 +1,26 @@
+{
+  "short_name": "GPT-max",
+  "name": "GPT-max",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./index.html",
+  "scope": "./",
+  "background_color": "#001c18",
+  "theme_color": "#111827",
+  "display": "standalone",
+  "orientation": "portrait",
+  "description": "Sistem Analisis Momentum & Signal Power Swing Trading Saham IDX",
+  "lang": "id"
+}
