@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gpt-max-v2';
+const CACHE_NAME = 'gpt-max-v3';
 const APP_SHELL = [
   './',
   './index.html',
