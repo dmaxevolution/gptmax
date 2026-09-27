@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gpt-max-v5';
+const CACHE_NAME = 'gpt-max-v6'; // Dinaikkan ke v6 agar browser membuang cache eror v5 sebelumnya
 const APP_SHELL = [
   './',
   './index.html',
@@ -60,21 +60,6 @@ self.addEventListener('fetch', (event) => {
     );
     return;
   }
-  
-// Contoh fungsi menyembunyikan splash setelah data selesai dimuat
-function hideSplashScreen() {
-    const splash = document.getElementById('app-splash');
-    if (splash) {
-        splash.classList.add('opacity-0'); // Efek animasi memudar
-        
-        // Tunggu animasi pudar selesai (500ms sesuai durasi kelas Tailwind Anda), lalu hilangkan total
-        setTimeout(() => {
-            splash.style.display = 'none'; // Menghilangkan elemen dari jalur sentuhan jari
-            // Atau bisa menggunakan: splash.remove();
-        }, 500);
-    }
-}
-  
 
   // Same-origin static files are cache-first.
   if (url.origin === self.location.origin) {
