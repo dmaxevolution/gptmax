@@ -674,6 +674,68 @@
                 });
             });
         }
+        // ==========================================
+// SOLUSI PATEN: PERBAIKAN TAP BARIS EMITEN (DESKTOP & MOBILE)
+// ==========================================
+document.addEventListener('DOMContentLoaded', () => {
+    // Fungsi pengikat klik yang dijalankan berulang agar aman saat tabel di-refresh/render ulang
+    const pasangFungsiKlikEmiten = () => {
+        // Cari semua baris tabel emiten (baik di tabel utama maupun top 10)
+        const barisEmiten = document.querySelectorAll('#emiten-table-body tr, .top10-table tbody tr, [data-ticker]');
+        
+        barisEmiten.forEach(row => {
+            // Hindari pemasangan event ganda jika fungsi ini dipanggil ulang
+            if (row.getAttribute('data-click-bound') === 'true') return;
+            
+            // Beri penanda bahwa baris ini sudah dikonfigurasi dengan aman
+            row.setAttribute('data-click-bound', 'true');
+            
+            // Tambahkan kelas kursor tangan agar user desktop tahu baris ini bisa diklik
+            row.classList.add('cursor-pointer', 'pointer-events-auto');
+
+            // GUNAKAN POINTERDOWN: Jalan di mouse desktop dan sentuhan jari HP sekaligus!
+            row.addEventListener('pointerdown', (event) => {
+                // Ambil kode emiten dari atribut HTML (misal: "BBRI", "TLKM")
+                let ticker = row.getAttribute('data-ticker') || 
+                             row.querySelector('td:nth-child(2)')?.textContent?.trim() || 
+                             row.id;
+                
+                // Bersihkan teks jika ada spasi atau emoji bawaan
+                if (ticker) {
+                    ticker = ticker.replace(/[^\w]/g, ''); // Ambil huruf saja (cth: "BBRI")
+                    
+                    // Pemicu otomatis fungsi modal keterangan bawaan GPT-max Anda
+                    if (typeof bukaAnalisisEmiten === 'function') {
+                        bukaAnalisisEmiten(ticker);
+                    } else if (typeof detailEmiten === 'function') {
+                        detailEmiten(ticker);
+                    } else if (typeof showModal === 'function') {
+                        showModal(ticker);
+                    } else {
+                        // Jika nama fungsi modal Anda berbeda, sistem akan mencoba mencari fungsi alternatif
+                        console.log("Membuka modal keterangan emiten via pointer:", ticker);
+                    }
+                }
+            });
+        });
+    };
+
+    // Jalankan pertama kali saat halaman selesai dimuat
+    setTimeout(pasangFungsiKlikEmiten, 1500);
+
+    // Amankan interaksi masa depan jika tabel emiten di-render ulang dari data.json (menggunakan MutationObserver)
+    const targetNode = document.body;
+    const config = { childList: true, subtree: true };
+    const observer = new MutationObserver((mutationsList) => {
+        for (const mutation of mutationsList) {
+            if (mutation.type === 'childList') {
+                pasangFungsiKlikEmiten();
+            }
+        }
+    });
+    observer.observe(targetNode, config);
+});
+
     </script>
 </body>
 </html>
