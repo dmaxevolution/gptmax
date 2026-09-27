@@ -14,7 +14,7 @@ TICKERS = [
     {"ticker": "INDF", "category": "Bluechip"}, {"ticker": "AMRT", "category": "Bluechip"},
     {"ticker": "TPIA", "category": "Bluechip"}, {"ticker": "BREN", "category": "Bluechip"},
     {"ticker": "BYAN", "category": "Bluechip"}, {"ticker": "CPIN", "category": "Bluechip"},
-    {"ticker": "MEDS", "category": "Bluechip"}, {"ticker": "KLBF", "category": "Bluechip"},
+    {"ticker": "KLBF", "category": "Bluechip"},
 
     # Energy, Mining & Metals
     {"ticker": "ADRO", "category": "IDX"}, {"ticker": "PTBA", "category": "IDX"},
@@ -23,7 +23,7 @@ TICKERS = [
     {"ticker": "PGAS", "category": "IDX"}, {"ticker": "AKRA", "category": "IDX"},
     {"ticker": "HRUM", "category": "IDX"}, {"ticker": "MBMA", "category": "IDX"},
     {"ticker": "NCKL", "category": "IDX"}, {"ticker": "AMMN", "category": "IDX"},
-    {"ticker": "CUAN", "category": "IDX"}, {"ticker": "DOOID", "category": "IDX"},
+    {"ticker": "CUAN", "category": "IDX"}, {"ticker": "DOID", "category": "IDX"},
     {"ticker": "INDY", "category": "IDX"}, {"ticker": "ELSA", "category": "IDX"},
     {"ticker": "ENRG", "category": "IDX"}, {"ticker": "BUMI", "category": "IDX"},
     {"ticker": "DEWA", "category": "IDX"}, {"ticker": "BRMS", "category": "IDX"},
@@ -55,6 +55,7 @@ TICKERS = [
     {"ticker": "SILO", "category": "IDX"}, {"ticker": "SIDO", "category": "IDX"},
     {"ticker": "TSPC", "category": "IDX"}, {"ticker": "KAEF", "category": "IDX"},
     {"ticker": "CLEO", "category": "IDX"}, {"ticker": "ULTJ", "category": "IDX"},
+    {"ticker": "MEDS", "category": "IDX"}, 
 
     # Property & Construction
     {"ticker": "BSDE", "category": "IDX"}, {"ticker": "CTRA", "category": "IDX"},
