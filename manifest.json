@@ -1,20 +1,32 @@
 {
   "short_name": "GPT-max",
   "name": "GPT-max",
-  "icons": [
-    {
-      "src": "assets/icon-192.png",
-      "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "assets/icon-512.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "any maskable"
-    }
-  ],
+ "icons": [
+  {
+    "src": "assets/icon-192.png",
+    "type": "image/png",
+    "sizes": "192x192",
+    "purpose": "any"
+  },
+  {
+    "src": "assets/icon-192.png",
+    "type": "image/png",
+    "sizes": "192x192",
+    "purpose": "maskable"
+  },
+  {
+    "src": "assets/icon-512.png",
+    "type": "image/png",
+    "sizes": "512x512",
+    "purpose": "any"
+  },
+  {
+    "src": "assets/icon-512.png",
+    "type": "image/png",
+    "sizes": "512x512",
+    "purpose": "maskable"
+  }
+],
   "start_url": "./index.html",
   "scope": "./",
   "background_color": "#001c18",
