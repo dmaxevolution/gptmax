@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-11-23 11:56:22 WIB",
+  "last_updated": "2026-11-23 21:57:21 WIB",
   "total_scanned": 107,
   "ihsg": {
     "name": "IHSG",
-    "open": 5134.06,
-    "high": 5244.35,
-    "low": 5062.09,
-    "close": 5215.85,
-    "prev_close": 5146.33,
-    "change_pct": 1.35
+    "open": 5152.16,
+    "high": 5196.28,
+    "low": 5094.89,
+    "close": 5146.33,
+    "prev_close": 5194.14,
+    "change_pct": -0.92
   },
   "top_10_entry": [
     {
@@ -3790,7 +3790,7 @@
       "category": "IDX",
       "ema20": 133.02,
       "ema20_status": "sell",
-      "ema50": 134.46,
+      "ema50": 134.41,
       "ema50_status": "strong_sell",
       "rsi": 50.0,
       "rsi_status": "buy",
@@ -3808,9 +3808,9 @@
       "close": 161.0,
       "change_pct": 0.0,
       "category": "IDX",
-      "ema20": 161.78,
+      "ema20": 161.71,
       "ema20_status": "sell",
-      "ema50": 169.05,
+      "ema50": 168.73,
       "ema50_status": "strong_sell",
       "rsi": 50.0,
       "rsi_status": "buy",
